@@ -1,0 +1,14 @@
+# this is a terraform dedicated file where we will keep updating and modifying, here will define the providers that terraform may need to install .
+# terraform se related sb cheeze idhr hogi , configurations sb idhr rhengi . 
+terraform {
+	required_providers {
+	docker = {
+		source  = "kreuzwerker/docker"
+		version = "3.0.2"
+		}
+  	# installing AWS provider
+	aws = {
+	source  = "hashicorp/aws"
+	version = "~> 5.0"
+  }
+}

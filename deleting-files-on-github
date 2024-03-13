@@ -1,0 +1,18 @@
+
+If you want to delete a file from the repository without removing it from your local file system, you can use the git rm command with the --cached option. This removes the file from version control but keeps it in your local directory.
+
+Remove the file from the repository, keeping it locally:
+
+css
+Copy code
+git rm --cached file-to-keep-locally.txt
+Commit the change:
+
+sql
+Copy code
+git commit -m "Remove file from repository"
+Push the changes to your remote repository:
+
+perl
+Copy code
+git push origin your-branch-name
